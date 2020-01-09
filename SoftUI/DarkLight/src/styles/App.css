@@ -1,18 +1,15 @@
-
 .App [data-theme ='light'] {
   --bg: #c7cff5;  
   --bg-panel: #ebebeb;
   --color-title: #0077ff;
   --color-content: #333333;
 }
-
 .App [data-theme='dark'] {
   --bg: #333333;  
   --bg-panel: #434343;
   --color-title: #3694ff;
   --color-content: #b5b5b5;
 }
-
 .App {
   height: 100%;
   text-align: center;
@@ -21,18 +18,15 @@
   align-items: center;
   background-color: var(--bg);
 }
-
 .Header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-
 .Header h1 {
   font-size: 20px;
   color: var(--color-title);
-
 }
 .Box {
   padding: 30px;
@@ -52,7 +46,6 @@ input[type=checkbox]{
   width: 0;
   visibility: hidden;
 }
-
 label {
   cursor: pointer;
   text-indent: -9999px;
@@ -63,7 +56,6 @@ label {
   border-radius: 100px;
   position: relative;
 }
-
 label:after {
   content: "";
   position: absolute;
@@ -75,16 +67,14 @@ label:after {
   border-radius: 90px;
   transition: 0.3s;
 }
-
 input:checked + label {
   background: var(--color-title);
 }
-
 input:checked + label:after {
   left: calc(100%);
   transform: translateX(-100%);
+  
 }
-
 label:active:after {
   width: 45px;
 }

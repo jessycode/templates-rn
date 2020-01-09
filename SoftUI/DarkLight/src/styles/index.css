@@ -13,6 +13,14 @@ html [data-theme=dark] {
   --color-content: #b5b5b5;
 }
 
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after{
+  transition: all, 750ms, !important;
+  transition-delay: 0 !important;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', 'Montserrat','Ubuntu', 'Cantarell', 
